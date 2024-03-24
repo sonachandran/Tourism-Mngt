@@ -5,7 +5,7 @@ const userschema=new mongoose.Schema({
         type:String,
         required:true
     },
-    username:{
+    lastname:{
         type:String,
         required:true
 
@@ -19,7 +19,8 @@ const userschema=new mongoose.Schema({
         required:true
 
     },
-    address:{
+  
+    type:{
         type:String,
         required:true
     }
