@@ -1,4 +1,5 @@
 const mongoose=require('mongoose')
+const User = require('./User')
 const Bookingschema=new mongoose.Schema({
     
     destination:{
@@ -23,7 +24,12 @@ const Bookingschema=new mongoose.Schema({
     dob:{
         type:String,
         required:true
-    }
+    },
+    
+    userid:{
+        type:mongoose.Types.ObjectId,
+        ref:User
+    } 
    
 
 })
