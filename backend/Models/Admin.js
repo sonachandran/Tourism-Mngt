@@ -1,11 +1,11 @@
 const mongoose=require('mongoose')
-const userschema=new mongoose.Schema({
+const adminschema=new mongoose.Schema({
     
-    firstname:{
+    fullname:{
         type:String,
         required:true
     },
-    lastname:{
+    username:{
         type:String,
         required:true
 
@@ -25,17 +25,9 @@ const userschema=new mongoose.Schema({
         required:true
     },
     
-    city:{
-        type:String,
-        required:true
-    },
-    verified: {
-        type: Boolean,
-        default: false
-      }
-
+   
 })
 
-let User=mongoose.model('User',userschema)
+let Admin=mongoose.model('Admin',adminschema)
 
-module.exports=User
+module.exports=Admin
