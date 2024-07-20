@@ -1,0 +1,1 @@
+export const baseUrl='https://tourism-5-zjj6.onrender.com'
